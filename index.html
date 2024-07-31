@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lottery Announcement</title>
+  <style>
+    body {
+      background: #f0f2f5;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .description, .instructions {
+      font-size: 16px;
+      text-align: left;
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+    .description p, .instructions p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .instructions ul {
+      list-style-type: disc;
+      margin: 10px 0 10px 20px;
+      padding: 0;
+    }
+    .contact-container {
+      display: flex;
+      justify-content: center;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+    .contact-form h1 {
+      font-weight: 600;
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+    .contact-form hr {
+      border: none;
+      width: 60px;
+      height: 4px;
+      background-color: #ff994f;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .contact-input {
+      width: 100%;
+      height: 45px;
+      border: 1px solid #ddd;
+      outline: none;
+      padding-left: 15px;
+      font-size: 16px;
+      color: #333;
+      border-radius: 5px;
+      transition: border 0.3s ease;
+    }
+    .contact-form textarea {
+      width: 100%;
+      height: 120px;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      transition: border 0.3s ease;
+    }
+    .contact-input:focus, .contact-form textarea:focus {
+      border: 1px solid #ff994f;
+    }
+    .contact-input::placeholder, .contact-form textarea::placeholder {
+      color: #aaa;
+    }
+    .contact-form button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 30px;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(270deg, #ff994f, #fa6d86);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .contact-form button:hover {
+      background: linear-gradient(270deg, #fa6d86, #ff994f);
+    }
+    .instructions img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="description">
+      <h2>Lottery Announcement</h2>
+      <p><strong>English:</strong></p>
+      <p>Hello users. I want to publish a lottery where the winners have attractive prizes. For that, you have to fill and submit the form mentioned below. Our lottery period is 2 weeks. Don't wait, fill it up now and you too can get attractive rewards.</p>
+      <p><strong>Bangla:</strong></p>
+      <p>হ্যালো ব্যবহারকারীরা। আমি একটি লটারি প্রকাশ করতে চাই যেখানে বিজয়ীদের জন্য রয়েছে আকর্ষণীয় পুরস্কার। এর জন্য আপনাকে নীচের উল্লিখিত ফর্মটি পূরণ করতে হবে এবং জমা দিতে হবে। আমাদের লটারির সময়কাল 2 সপ্তাহ। তাহলে আর দেরি নেই, এখনই এটি পূরণ করুন এবং আপনিও আকর্ষণীয় পুরস্কার পেতে পারেন।</p>
+    </div>
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <strong>English:</strong>
+      <ul>
+        <li>After submitting your form, we will send you a code.</li>
+        <li>That code will be your serial number.</li>
+        <li>Through which you can see your position.</li>
+      </ul>
+      <strong>Special note:</strong>
+      <p>The form can also be filled in Bengali, except for the Photo URL.</p>
+      <strong>Bangla:</strong>
+      <ul>
+        <li>ফর্মটি সাবমিট করার পরে আমরা আপনাকে একটি কোড পাঠাবো।</li>
+        <li>সেখানে আপনার সিরিয়াল নাম্বার দেওয়া থাকবে।</li>
+        <li>এর মাধ্যমে আপনি আপনার পজিশন জেনে নিতে পারেন।</li>
+      </ul>
+      <strong>বিশেষ দ্রষ্টব্য:</strong>
+      <p>আপনি এই ফর্মটি বাংলাতেও পূরণ করতে পারেন, Your Photo's URL ব্যাতীত।</p>
+    </div>
+    <div class="instructions">
+      <h2>How to Create Your Photo's URL</h2>
+      <p><strong>Step 1:</strong> Go to Google Drive</p>
+      <img src="/s-1.jpeg" alt="Step 1">
+      <p><strong>Step 2:</strong> Click the "New" button</p>
+      <img src="/s-2.jpg" alt="Step 2">
+      <p><strong>Step 3:</strong> Click "Upload" button</p>
+      <img src="/s-3.jpg" alt="Step 3">
+      <p><strong>Step 4:</strong> Click "Albums" / sidebar</p>
+      <img src="/s-4.jpg" alt="Step 4">
+      <p><strong>Step 5:</strong> Click "Albums"</p>
+      <img src="/s-5.jpg" alt="Step 5">
+      <p><strong>Step 6:</strong> Select your photo</p>
+      <img src="/s-6.jpg" alt="Step 6">
+      <p><strong>Step 7:</strong> Click the 3 dots</p>
+      <img src="/s-7.jpg" alt="Step 7">
+      <p><strong>Step 8:</strong> Go to "Manage Access"</p>
+      <img src="/s-8.jpg" alt="Step 8">
+      <p><strong>Step 9:</strong> Click "Restricted"</p>
+      <img src="/s-9.jpg" alt="Step 9">
+      <p><strong>Step 10:</strong> Click "Anyone with the link"</p>
+      <img src="/s-10.jpg" alt="Step 10">
+      <p><strong>Step 11:</strong> Click "Copy link"</p>
+      <img src="/s-11.jpg" alt="Step 11">
+      <p><strong>Step 12:</strong> Come back and copy the link and paste the link</p>
+      <img src="/s-12.jpg" alt="Step 12">
+      
+
+      
+      
+      
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <h1>Lottery Form</h1>
+        <hr>
+        <input type="hidden" name="access_key" value="4dc87d3b-c85e-449d-8772-8f6bea8410a7">
+        <input type="text" name="name" placeholder="Your name" class="contact-input" required>
+        <input type="number" name="number" placeholder="Your phone number" required class="contact-input">
+        <input type="url" name="url" placeholder="Photo's URL" class="contact-input" required>
+        <input type="email" name="email" placeholder="Your email" class="contact-input" required>
+        <textarea name="message" class="contact-input" placeholder="Your address"></textarea>
+        <button type="submit">Submit!</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
